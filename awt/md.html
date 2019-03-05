@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="md2.css">
+</head>
+<BODY>
+		<link rel="stylesheet" type="text/css" href="head.css">
+	<header>
+<p  align="center" style="font-size: 50px;width: 100%;font-family: "Roboto",sans-serif;">
+    MODERN ENGLISH HIGH SCHOOL
+  </p>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="md.html" style="margin-left: 250px;padding: 19px;">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="margin: 10px;padding: 10px;">About 
+    </button>
+    <div class="dropdown-content">
+    	<a href="overview.html">Overview</a>
+    	<a href="mission.html">Mission</a>
+      	<a href="vision.html">Vision</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn" style="margin: 10px;padding: 10px;">Academics 
+    </button>
+    <div class="dropdown-content">
+    	<a href="samplepaper.html">Sample Papers</a>
+    	<a href="">Calender</a>
+     	<a href="">Rules & Regulations</a>
+     	<a href="">Dress Code</a>    
+    </div>
+  </div>
+  
+  <div class="dropdown" style="margin: 6px;padding: 0px;">
+    <button class="dropbtn">Faculty 
+    </button>
+    <div class="dropdown-content">
+    <a href=" ">Apply For a Job</a>
+    <a href=" ">Faculties</a>
+    </div>
+  </div>
+  
+  <div class="dropdown" style="margin: 6px;padding: 0px;">
+    <button class="dropbtn">Alumini 
+    </button>
+    <div class="dropdown-content">
+    <a href="Alumniform.html">Alumini Registration Form</a>
+    <a href="#">Aluminies</a>
+      <a href="#">Alumini Gallery</a>
+    </div>
+  </div> 
+  
+  
+  <div class="dropdown" style="margin: 6px;padding: 0px;">
+    <button class="dropbtn">Appointment 
+    </button>
+    <div class="dropdown-content">
+	    <a href="#">Book Appointment</a>
+    	<a href="#">Cancel Appointment</a>
+    </div>
+  </div>
+  
+  <div class="dropdown" style="margin: 6px;padding: 0px;">
+    <button class="dropbtn">Gallery 
+    </button>
+    <div class="dropdown-content">
+    	<a href="2018.html">2018</a>
+    	<a href="2017.html">2017</a>
+      	<a href="2016.html">2016</a>
+    </div>
+  </div> 
+  
+  <a href="#home" style="margin: 10px;padding: 10px;">Contact Us</a>
+  
+</div>
+
+<!--slideshowimage-->
+<figure class="slide">
+			<style>
+				* {box-sizing: border-box;}
+				body {font-family: Verdana, sans-serif;}
+		.slide
+		{
+			margin-top: 0px;
+			width: 100%;
+			padding: 0px;
+			margin: 0px;
+		}
+		.mySlides 
+		{
+			margin: -7.5px;
+			display: none;
+		}
+/* Fading animation */
+		.fade 
+		{
+			-webkit-animation-name: fade;
+  			-webkit-animation-duration:1.5s;
+  			animation-name: fade;
+  			animation-duration:1.5s;
+		}
+
+		@-webkit-keyframes fade 
+		{
+  			from 
+  			{
+  				opacity: .4
+  			} 
+  			to
+  			{
+  			 	opacity: 1
+  			}
+		}
+
+		@keyframes fade
+		{
+  			from 
+  			{
+  				opacity: .4
+  			}	 
+  
+  			to 
+  			{
+  				opacity: 1
+  			}
+		}	
+
+					#grad1 {
+						margin-left: 570px;
+						margin-bottom: 20px;
+						width:12%;	
+  						height: 40px;
+	 					background-image: linear-gradient(blue, yellow,green); 
+							}
+</style>
+<body>
+
+		<div class="mySlides fade">
+  			<img src="background1.jpeg" style="width:100%;height: 500px;margin: 0px;padding: 0px;">
+		</div>
+		<div class="mySlides fade">
+  			<img src="background2.jpeg" style="width:100%;height: 500px;margin: 0px;padding: 0px">
+		</div>
+		<div class="mySlides fade">
+  			<img src="background3.jpeg" style="width:100%;height: 500px;margin: 0px;padding: 0px">
+		</div>
+		<div class="mySlides fade">
+  			<img src="background4.jpeg" style="width:100%;height: 500px;margin: 0px;padding: 0px">
+		</div>
+
+<br>
+
+	<div style="text-align:center">
+  		<span class="dot"></span> 
+  		<span class="dot"></span> 
+  		<span class="dot"></span> 
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() 
+		{
+  			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			for (i = 0; i < slides.length; i++) 
+  			{
+    			slides[i].style.display = "none";  
+  			}
+  			slideIndex++;
+  		
+  			if (slideIndex > slides.length) 
+  			{
+  				slideIndex = 1
+  			}    
+  		
+  			for (i = 0; i < dots.length; i++) 
+  			{
+    			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  		
+  			slides[slideIndex-1].style.display = "block";  
+  			dots[slideIndex-1].className += " active";
+  			setTimeout(showSlides, 5000) ; // Change image every 5 seconds
+		}
+	</script>
+
+</figure>
+
+
+			<figure class="image" align="left" style="padding: 0px;margin: 0px">
+					<div class="row">
+<!--divclassrow-->
+	  					<div class="column">
+<!--divclasscol-->
+							<a href="">
+<!--aboutimage-->
+  								<img src="admission.jpg" style="margin-top: 50px">
+							</a>
+
+							<figcaption class="adms" align="left" style="margin-top: 14px">
+								<b style="font-size: 25px">
+									About
+								</b>
+								<p align="left" style="font-size: 20px;width:300px;font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">
+									Success is a puzzle to be solved with consistency. We, ‘The Modern Family’ believe in providing versatile educational dynamics with quality preference. An English medium Co-Educational school from Junior to Class XII, affiliated to GSEB curriculum; consistently providing high-quality education.
+								</p>
+<!--Read More-->
+								<p>
+									<a href="" style="color:#F57760;font-size: 20px">Read more...==></a>
+								</p>
+							</figcaption>
+  						</div>
+						
+						<div class="row">
+	  						<div class="column">
+								<a href="">
+<!--admissionimage-->
+  									<img src="admission.jpg" style="margin-top: 50px">
+								</a>
+
+								<figcaption align="left" style="margin-top: 14px">
+									<b style="font-size: 25px">
+										Admission
+									</b>
+									<p align="left" style="font-size: 20px;width:300px;font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">
+										Modern English High School is the first and foremost school where children are happy, confident and enthusiastic learners. We take every admission as a challenge and help your child to grow every once and become a better person.
+									</p>
+								</figcaption>
+  							</div>
+
+ 			 			<div class="column">
+  							<a href="">
+<!--academics-->
+  								<img src="academics.png" style="margin-top: 44px">
+							</a>
+						
+							<figcaption align="left" style="margin-top: 20px">
+								<b style="font-size: 25px">
+									Academics
+								</b>
+								<p align="left" style="font-size: 20px;width:300px;font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">
+									Apart from literary education we provide constructive and entertaining curriculum, including co- curricular activities which are organized in school to sharpen intellectual skills.
+								</p>
+							</figcaption>
+	  					</div>
+
+	  					<div  align="left" class="column" style="margin-top: 40px">
+  							<a href="" style="font-style: none;">
+<!--video-->
+  								<video align="left" width="320" height="200" controls autoplay muted>
+  									<source src="eram.mp4" type="video/mp4">
+								</video>
+							</a>
+					
+							<figcaption align="left" style="margin-top: 4px">
+								<b style="font-size: 25px">
+									Activities
+								</b>
+								<p align="left" style="font-size: 20px;width:300px;font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;">
+										We aim to ensure that all students reach their full potential academically and make them successful in many different areas. Developing the wholesome personality by giving emphasis on studies along with a lot of activities.
+								</p>
+<!--watch more-->
+								<p>
+									<a href="" style="color:#F57760;font-size: 20px;">Watch more..==></a>
+								</p>				
+							</figcaption>
+	  					</div>
+	  			</figure>
+	  			</p>
+
+<!--Enuire-->	<p style="font-size: 30px;margin-left: 480px;position: relative;border: 25px;height:45px;text-align:center;width:25%;					background-color:blue;color: white;">
+	  				Enquire Now
+	  			</p>
+
+<!--Form-->
+			<form>
+				<input type="text" name="Name" placeholder="Enter Your Name here" required style="font-size: 20px;font-style: italic;margin-left: 340px;margin-bottom: 40px;">
+				<input type="email" name="emailaddress" placeholder="Enter Your Email-id here" required style="font-size: 20px;font-style: italic;margin-left: 140px">
+				<input type="number" name="whatsapp number" placeholder="Enter Your Whatsapp No. Here" required style="font-size: 20px;font-style: italic;margin-left: 340px;margin-bottom: 40px;">
+				<input type="number" name="alternate number" placeholder="Enter Your Alternate No. Here" style="font-size: 20px;font-style: italic;margin-left: 140px">
+				<br>
+				<textarea rows="8" cols="40" name="message" placeholder="Enter your Message/Query here !" required style="margin-left:500px;margin-bottom: 40px; "></textarea>
+				<br>
+				<button id="grad1">Submit</button>
+			</form>	  			
+
+			<div class="row1">
+<!--divclassrow1-->
+<!--errorhover-->
+  				<div class="column1">
+<!--divclasscol1-->
+    				<p>
+    					<p  style="color: white;font-size: 25px;">
+<!--About-->
+    						About
+    					</p>
+    					<p style="width: 25%;height:160px">
+    						<a href="" style="text-decoration: none;color: #F57760;font-size: 20px">Overview</a>
+    					</p>
+    				</p>
+  				</div>
+  				
+  				<div class="column1">
+  					<p>
+  						<p style="text-decoration: none;color: white;font-size: 25px;">
+<!--Modern Education-->
+  							Modern Education
+  						</p>
+
+  						<p style="width: 70%;height: 160px">
+    						<a href="" style="text-decoration: none;color: #F57760;font-size: 20px">Admission Procedure</a>
+    						<a href="" style="text-decoration: none;color: #F57760;font-size: 20px">Dress Code</a>
+    					</p>
+  					</p>
+  				</div>
+  
+  				<div class="column1">
+  					<p>
+  						<p style="text-decoration: none;color: white;font-size: 25px;">
+<!--StudentCorner-->
+  							Student Corner
+  						</p>
+
+  						<p style="width: 60%;height: 160px">
+    						<a href="" style="text-decoration: none;color: #F57760;font-size: 20px">Academic Calender</a>
+    					</p>
+  					</p>
+  				</div>	
+
+  				<div class="column1">
+  					<p>
+  						<p style="color: white;font-size: 25px;">
+<!--Connect with us-->
+  							Connect With Us
+  						</p>
+  						<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  						<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+  						<p style="width: 40%;height: 160px">
+  							<a href="location.html" style="text-decoration: none;color: white">
+  							<i class="material-icons" style="color: white;margin-bottom: 0px">location_on</i>
+  							Koliwad, Imran Nagar, Vapi, Gujarat 396191
+  							</a>
+  							<a href="">
+<!--Facebook logo--> 			<i style='font-size:24px;color: #3859A0' class='fab'>&#xf09a;  Facebook</i>
+  							</a>
+  							<a href="">
+<!--Twitter logo--> 			<i class='fab fa-twitter' style='font-size:24px;color:#5DBCD2'>  Twitter</i>
+  							</a>
+  							<a href="">
+<!--Instagram logo-->			<i class='fab fa-instagram' style='font-size:24px;color:#9939C5'>  Instagram</i>
+    						</a>
+    					</p>
+  					</p>
+  				</div>
+			</div>
+	</header>
+</BODY>
+</html>

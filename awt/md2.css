@@ -1,0 +1,28 @@
+.column 
+{
+  float: left;
+  width: 25%;
+}
+
+.row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column1{
+  background-color: #34373C;
+  float: left;
+  width: 25%;
+}
+
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column p a:hover
+{
+	color: white;
+}
